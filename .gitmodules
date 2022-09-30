@@ -40,3 +40,6 @@
 	path = vendor/uchardet
 	url = https://github.com/BYVoid/uchardet
 	ignore = dirty
+[submodule "vendor/vcpkg"]
+	path = vendor/vcpkg
+	url = https://github.com/Microsoft/vcpkg.git
