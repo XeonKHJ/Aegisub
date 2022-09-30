@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\libaegisub\ass\dialogue_parser.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\ass\time.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\ass\uuencode.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\audio\provider.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\audio\provider_convert.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\audio\provider_dummy.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\audio\provider_hd.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\audio\provider_lock.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\audio\provider_pcm.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\audio\provider_ram.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\cajun\elements.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\cajun\reader.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\cajun\writer.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\calltip_provider.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\character_count.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\charset.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\charset_6937.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\charset_conv.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\color.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\dispatch.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\file_mapping.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\format.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\fs.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\hotkey.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\io.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\json.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\kana_table.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\karaoke_matcher.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\keyframe.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\line_iterator.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\log.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\mru.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\option.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\option_value.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\parser.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\path.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\thesaurus.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\util.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\vfr.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\common\ycbcr_conv.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\lua\modules.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\lua\modules\lfs.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\lua\modules\lpeg.c" />
+    <ClCompile Include="..\..\..\libaegisub\lua\modules\re.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\lua\modules\unicode.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\lua\script_reader.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\lua\utils.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\windows\access.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\windows\charset_conv_win.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\windows\fs.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\windows\lagi_pre.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\windows\log_win.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\windows\path_win.cpp" />
+    <ClCompile Include="..\..\..\libaegisub\windows\util_win.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\libaegisub\common\charset_6937.h" />
+    <ClInclude Include="..\..\..\libaegisub\common\parser.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\access.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\address_of_adaptor.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\ass\dialogue_parser.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\ass\smpte.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\ass\time.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\ass\uuencode.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\audio\provider.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\background_runner.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\cajun\elements.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\cajun\reader.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\cajun\visitor.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\cajun\writer.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\calltip_provider.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\character_count.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\charset.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\charset_conv.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\charset_conv_win.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\color.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\dispatch.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\exception.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\file_mapping.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\format.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\format_flyweight.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\format_path.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\fs.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\fs_fwd.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\hotkey.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\io.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\json.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\kana_table.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\karaoke_matcher.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\keyframe.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\line_iterator.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\line_wrap.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\log.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\lua\ffi.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\lua\modules.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\lua\script_reader.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\lua\utils.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\make_unique.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\mru.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\of_type_adaptor.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\option.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\option_value.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\owning_intrusive_list.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\path.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\scoped_ptr.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\signal.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\spellchecker.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\split.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\thesaurus.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\type_name.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\util.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\util_osx.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\vfr.h" />
+    <ClInclude Include="..\..\..\libaegisub\include\libaegisub\ycbcr_conv.h" />
+    <ClInclude Include="..\..\..\libaegisub\lua\modules\lpeg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\libaegisub\include\libaegisub\charsets.def" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{388dc7de-c952-4d9f-9f75-35b27577716e}</ProjectGuid>
+    <RootNamespace>libaegisub</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\..\..\..\libaegisub\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

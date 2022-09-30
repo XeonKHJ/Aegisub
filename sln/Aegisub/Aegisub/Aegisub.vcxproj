@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{39eee637-498f-48ce-a0cd-44384e8eb624}</ProjectGuid>
+    <RootNamespace>Aegisub</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Aegisub.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Aegisub.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\aegisublocale.cpp" />
+    <ClCompile Include="..\..\..\src\agi_pre.cpp" />
+    <ClCompile Include="..\..\..\src\ass_attachment.cpp" />
+    <ClCompile Include="..\..\..\src\ass_dialogue.cpp" />
+    <ClCompile Include="..\..\..\src\ass_entry.cpp" />
+    <ClCompile Include="..\..\..\src\ass_exporter.cpp" />
+    <ClCompile Include="..\..\..\src\ass_export_filter.cpp" />
+    <ClCompile Include="..\..\..\src\ass_file.cpp" />
+    <ClCompile Include="..\..\..\src\ass_karaoke.cpp" />
+    <ClCompile Include="..\..\..\src\ass_override.cpp" />
+    <ClCompile Include="..\..\..\src\ass_parser.cpp" />
+    <ClCompile Include="..\..\..\src\ass_style.cpp" />
+    <ClCompile Include="..\..\..\src\ass_style_storage.cpp" />
+    <ClCompile Include="..\..\..\src\async_video_provider.cpp" />
+    <ClCompile Include="..\..\..\src\audio_box.cpp" />
+    <ClCompile Include="..\..\..\src\audio_colorscheme.cpp" />
+    <ClCompile Include="..\..\..\src\audio_controller.cpp" />
+    <ClCompile Include="..\..\..\src\audio_display.cpp" />
+    <ClCompile Include="..\..\..\src\audio_karaoke.cpp" />
+    <ClCompile Include="..\..\..\src\audio_marker.cpp" />
+    <ClCompile Include="..\..\..\src\audio_player.cpp" />
+    <ClCompile Include="..\..\..\src\audio_player_alsa.cpp" />
+    <ClCompile Include="..\..\..\src\audio_player_dsound.cpp" />
+    <ClCompile Include="..\..\..\src\audio_player_dsound2.cpp" />
+    <ClCompile Include="..\..\..\src\audio_player_openal.cpp" />
+    <ClCompile Include="..\..\..\src\audio_player_oss.cpp" />
+    <ClCompile Include="..\..\..\src\audio_player_portaudio.cpp" />
+    <ClCompile Include="..\..\..\src\audio_player_pulse.cpp" />
+    <ClCompile Include="..\..\..\src\audio_provider_avs.cpp" />
+    <ClCompile Include="..\..\..\src\audio_provider_factory.cpp" />
+    <ClCompile Include="..\..\..\src\audio_provider_ffmpegsource.cpp" />
+    <ClCompile Include="..\..\..\src\audio_renderer.cpp" />
+    <ClCompile Include="..\..\..\src\audio_renderer_spectrum.cpp" />
+    <ClCompile Include="..\..\..\src\audio_renderer_waveform.cpp" />
+    <ClCompile Include="..\..\..\src\audio_timing_dialogue.cpp" />
+    <ClCompile Include="..\..\..\src\audio_timing_karaoke.cpp" />
+    <ClCompile Include="..\..\..\src\auto4_base.cpp" />
+    <ClCompile Include="..\..\..\src\auto4_lua.cpp" />
+    <ClCompile Include="..\..\..\src\auto4_lua_assfile.cpp" />
+    <ClCompile Include="..\..\..\src\auto4_lua_dialog.cpp" />
+    <ClCompile Include="..\..\..\src\auto4_lua_progresssink.cpp" />
+    <ClCompile Include="..\..\..\src\avisynth_wrap.cpp" />
+    <ClCompile Include="..\..\..\src\base_grid.cpp" />
+    <ClCompile Include="..\..\..\src\charset_detect.cpp" />
+    <ClCompile Include="..\..\..\src\colorspace.cpp" />
+    <ClCompile Include="..\..\..\src\colour_button.cpp" />
+    <ClCompile Include="..\..\..\src\command\app.cpp" />
+    <ClCompile Include="..\..\..\src\command\audio.cpp" />
+    <ClCompile Include="..\..\..\src\command\automation.cpp" />
+    <ClCompile Include="..\..\..\src\command\command.cpp" />
+    <ClCompile Include="..\..\..\src\command\edit.cpp" />
+    <ClCompile Include="..\..\..\src\command\grid.cpp" />
+    <ClCompile Include="..\..\..\src\command\help.cpp" />
+    <ClCompile Include="..\..\..\src\command\keyframe.cpp" />
+    <ClCompile Include="..\..\..\src\command\recent.cpp" />
+    <ClCompile Include="..\..\..\src\command\subtitle.cpp" />
+    <ClCompile Include="..\..\..\src\command\time.cpp" />
+    <ClCompile Include="..\..\..\src\command\timecode.cpp" />
+    <ClCompile Include="..\..\..\src\command\tool.cpp" />
+    <ClCompile Include="..\..\..\src\command\video.cpp" />
+    <ClCompile Include="..\..\..\src\command\vis_tool.cpp" />
+    <ClCompile Include="..\..\..\src\compat.cpp" />
+    <ClCompile Include="..\..\..\src\context.cpp" />
+    <ClCompile Include="..\..\..\src\crash_writer.cpp" />
+    <ClCompile Include="..\..\..\src\crash_writer_minidump.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_about.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_attachments.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_automation.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_autosave.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_colorpicker.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_detached_video.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_dummy_video.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_export.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_export_ebu3264.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_fonts_collector.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_jumpto.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_kara_timing_copy.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_log.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_paste_over.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_progress.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_properties.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_resample.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_search_replace.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_selected_choices.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_selection.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_shift_times.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_spellchecker.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_style_editor.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_style_manager.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_styling_assistant.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_text_import.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_timing_processor.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_translation.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_version_check.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_video_details.cpp" />
+    <ClCompile Include="..\..\..\src\dialog_video_properties.cpp" />
+    <ClCompile Include="..\..\..\src\export_fixstyle.cpp" />
+    <ClCompile Include="..\..\..\src\export_framerate.cpp" />
+    <ClCompile Include="..\..\..\src\ffmpegsource_common.cpp" />
+    <ClCompile Include="..\..\..\src\fft.cpp" />
+    <ClCompile Include="..\..\..\src\font_file_lister.cpp" />
+    <ClCompile Include="..\..\..\src\font_file_lister_fontconfig.cpp" />
+    <ClCompile Include="..\..\..\src\font_file_lister_gdi.cpp" />
+    <ClCompile Include="..\..\..\src\frame_main.cpp" />
+    <ClCompile Include="..\..\..\src\gl_text.cpp" />
+    <ClCompile Include="..\..\..\src\gl_wrap.cpp" />
+    <ClCompile Include="..\..\..\src\grid_column.cpp" />
+    <ClCompile Include="..\..\..\src\help_button.cpp" />
+    <ClCompile Include="..\..\..\src\hotkey.cpp" />
+    <ClCompile Include="..\..\..\src\hotkey_data_view_model.cpp" />
+    <ClCompile Include="..\..\..\src\initial_line_state.cpp" />
+    <ClCompile Include="..\..\..\src\libass_gdi_fontselect.cpp" />
+    <ClCompile Include="..\..\..\src\libresrc\libresrc.cpp" />
+    <ClCompile Include="..\..\..\src\main.cpp" />
+    <ClCompile Include="..\..\..\src\MatroskaParser.c" />
+    <ClCompile Include="..\..\..\src\menu.cpp" />
+    <ClCompile Include="..\..\..\src\mkv_wrap.cpp" />
+    <ClCompile Include="..\..\..\src\pen.cpp" />
+    <ClCompile Include="..\..\..\src\persist_location.cpp" />
+    <ClCompile Include="..\..\..\src\preferences.cpp" />
+    <ClCompile Include="..\..\..\src\preferences_base.cpp" />
+    <ClCompile Include="..\..\..\src\project.cpp" />
+    <ClCompile Include="..\..\..\src\resolution_resampler.cpp" />
+    <ClCompile Include="..\..\..\src\search_replace_engine.cpp" />
+    <ClCompile Include="..\..\..\src\selection_controller.cpp" />
+    <ClCompile Include="..\..\..\src\spellchecker.cpp" />
+    <ClCompile Include="..\..\..\src\spellchecker_hunspell.cpp" />
+    <ClCompile Include="..\..\..\src\spline.cpp" />
+    <ClCompile Include="..\..\..\src\spline_curve.cpp" />
+    <ClCompile Include="..\..\..\src\string_codec.cpp" />
+    <ClCompile Include="..\..\..\src\subs_controller.cpp" />
+    <ClCompile Include="..\..\..\src\subs_edit_box.cpp" />
+    <ClCompile Include="..\..\..\src\subs_edit_ctrl.cpp" />
+    <ClCompile Include="..\..\..\src\subs_preview.cpp" />
+    <ClCompile Include="..\..\..\src\subtitles_provider.cpp" />
+    <ClCompile Include="..\..\..\src\subtitles_provider_csri.cpp" />
+    <ClCompile Include="..\..\..\src\subtitles_provider_libass.cpp" />
+    <ClCompile Include="..\..\..\src\subtitle_format.cpp" />
+    <ClCompile Include="..\..\..\src\subtitle_format_ass.cpp" />
+    <ClCompile Include="..\..\..\src\subtitle_format_ebu3264.cpp" />
+    <ClCompile Include="..\..\..\src\subtitle_format_encore.cpp" />
+    <ClCompile Include="..\..\..\src\subtitle_format_microdvd.cpp" />
+    <ClCompile Include="..\..\..\src\subtitle_format_mkv.cpp" />
+    <ClCompile Include="..\..\..\src\subtitle_format_srt.cpp" />
+    <ClCompile Include="..\..\..\src\subtitle_format_ssa.cpp" />
+    <ClCompile Include="..\..\..\src\subtitle_format_transtation.cpp" />
+    <ClCompile Include="..\..\..\src\subtitle_format_ttxt.cpp" />
+    <ClCompile Include="..\..\..\src\subtitle_format_txt.cpp" />
+    <ClCompile Include="..\..\..\src\text_file_reader.cpp" />
+    <ClCompile Include="..\..\..\src\text_file_writer.cpp" />
+    <ClCompile Include="..\..\..\src\text_selection_controller.cpp" />
+    <ClCompile Include="..\..\..\src\thesaurus.cpp" />
+    <ClCompile Include="..\..\..\src\timeedit_ctrl.cpp" />
+    <ClCompile Include="..\..\..\src\toggle_bitmap.cpp" />
+    <ClCompile Include="..\..\..\src\toolbar.cpp" />
+    <ClCompile Include="..\..\..\src\tooltip_manager.cpp" />
+    <ClCompile Include="..\..\..\src\utils.cpp" />
+    <ClCompile Include="..\..\..\src\validators.cpp" />
+    <ClCompile Include="..\..\..\src\vector2d.cpp" />
+    <ClCompile Include="..\..\..\src\version.cpp" />
+    <ClCompile Include="..\..\..\src\video_box.cpp" />
+    <ClCompile Include="..\..\..\src\video_controller.cpp" />
+    <ClCompile Include="..\..\..\src\video_display.cpp" />
+    <ClCompile Include="..\..\..\src\video_frame.cpp" />
+    <ClCompile Include="..\..\..\src\video_out_gl.cpp" />
+    <ClCompile Include="..\..\..\src\video_provider_avs.cpp" />
+    <ClCompile Include="..\..\..\src\video_provider_cache.cpp" />
+    <ClCompile Include="..\..\..\src\video_provider_dummy.cpp" />
+    <ClCompile Include="..\..\..\src\video_provider_ffmpegsource.cpp" />
+    <ClCompile Include="..\..\..\src\video_provider_manager.cpp" />
+    <ClCompile Include="..\..\..\src\video_provider_yuv4mpeg.cpp" />
+    <ClCompile Include="..\..\..\src\video_slider.cpp" />
+    <ClCompile Include="..\..\..\src\visual_feature.cpp" />
+    <ClCompile Include="..\..\..\src\visual_tool.cpp" />
+    <ClCompile Include="..\..\..\src\visual_tool_clip.cpp" />
+    <ClCompile Include="..\..\..\src\visual_tool_cross.cpp" />
+    <ClCompile Include="..\..\..\src\visual_tool_drag.cpp" />
+    <ClCompile Include="..\..\..\src\visual_tool_rotatexy.cpp" />
+    <ClCompile Include="..\..\..\src\visual_tool_rotatez.cpp" />
+    <ClCompile Include="..\..\..\src\visual_tool_scale.cpp" />
+    <ClCompile Include="..\..\..\src\visual_tool_vector_clip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\aegisublocale.h" />
+    <ClInclude Include="..\..\..\src\agi_pre.h" />
+    <ClInclude Include="..\..\..\src\ass_attachment.h" />
+    <ClInclude Include="..\..\..\src\ass_dialogue.h" />
+    <ClInclude Include="..\..\..\src\ass_entry.h" />
+    <ClInclude Include="..\..\..\src\ass_exporter.h" />
+    <ClInclude Include="..\..\..\src\ass_export_filter.h" />
+    <ClInclude Include="..\..\..\src\ass_file.h" />
+    <ClInclude Include="..\..\..\src\ass_info.h" />
+    <ClInclude Include="..\..\..\src\ass_karaoke.h" />
+    <ClInclude Include="..\..\..\src\ass_override.h" />
+    <ClInclude Include="..\..\..\src\ass_parser.h" />
+    <ClInclude Include="..\..\..\src\ass_style.h" />
+    <ClInclude Include="..\..\..\src\ass_style_storage.h" />
+    <ClInclude Include="..\..\..\src\async_video_provider.h" />
+    <ClInclude Include="..\..\..\src\audio_box.h" />
+    <ClInclude Include="..\..\..\src\audio_colorscheme.h" />
+    <ClInclude Include="..\..\..\src\audio_controller.h" />
+    <ClInclude Include="..\..\..\src\audio_display.h" />
+    <ClInclude Include="..\..\..\src\audio_karaoke.h" />
+    <ClInclude Include="..\..\..\src\audio_marker.h" />
+    <ClInclude Include="..\..\..\src\audio_player_portaudio.h" />
+    <ClInclude Include="..\..\..\src\audio_provider_factory.h" />
+    <ClInclude Include="..\..\..\src\audio_renderer.h" />
+    <ClInclude Include="..\..\..\src\audio_renderer_spectrum.h" />
+    <ClInclude Include="..\..\..\src\audio_renderer_waveform.h" />
+    <ClInclude Include="..\..\..\src\audio_rendering_style.h" />
+    <ClInclude Include="..\..\..\src\audio_timing.h" />
+    <ClInclude Include="..\..\..\src\auto4_base.h" />
+    <ClInclude Include="..\..\..\src\auto4_lua.h" />
+    <ClInclude Include="..\..\..\src\auto4_lua_factory.h" />
+    <ClInclude Include="..\..\..\src\avisynth.h" />
+    <ClInclude Include="..\..\..\src\avisynth_wrap.h" />
+    <ClInclude Include="..\..\..\src\base_grid.h" />
+    <ClInclude Include="..\..\..\src\block_cache.h" />
+    <ClInclude Include="..\..\..\src\charset_detect.h" />
+    <ClInclude Include="..\..\..\src\colorspace.h" />
+    <ClInclude Include="..\..\..\src\colour_button.h" />
+    <ClInclude Include="..\..\..\src\command\command.h" />
+    <ClInclude Include="..\..\..\src\compat.h" />
+    <ClInclude Include="..\..\..\src\crash_writer.h" />
+    <ClInclude Include="..\..\..\src\dialogs.h" />
+    <ClInclude Include="..\..\..\src\dialog_detached_video.h" />
+    <ClInclude Include="..\..\..\src\dialog_export_ebu3264.h" />
+    <ClInclude Include="..\..\..\src\dialog_manager.h" />
+    <ClInclude Include="..\..\..\src\dialog_paste_over.h" />
+    <ClInclude Include="..\..\..\src\dialog_progress.h" />
+    <ClInclude Include="..\..\..\src\dialog_search_replace.h" />
+    <ClInclude Include="..\..\..\src\dialog_style_editor.h" />
+    <ClInclude Include="..\..\..\src\dialog_styling_assistant.h" />
+    <ClInclude Include="..\..\..\src\dialog_translation.h" />
+    <ClInclude Include="..\..\..\src\export_fixstyle.h" />
+    <ClInclude Include="..\..\..\src\export_framerate.h" />
+    <ClInclude Include="..\..\..\src\factory_manager.h" />
+    <ClInclude Include="..\..\..\src\ffmpegsource_common.h" />
+    <ClInclude Include="..\..\..\src\fft.h" />
+    <ClInclude Include="..\..\..\src\flyweight_hash.h" />
+    <ClInclude Include="..\..\..\src\font_file_lister.h" />
+    <ClInclude Include="..\..\..\src\format.h" />
+    <ClInclude Include="..\..\..\src\frame_main.h" />
+    <ClInclude Include="..\..\..\src\gl\glext.h" />
+    <ClInclude Include="..\..\..\src\gl_text.h" />
+    <ClInclude Include="..\..\..\src\gl_wrap.h" />
+    <ClInclude Include="..\..\..\src\grid_column.h" />
+    <ClInclude Include="..\..\..\src\help_button.h" />
+    <ClInclude Include="..\..\..\src\hotkey_data_view_model.h" />
+    <ClInclude Include="..\..\..\src\include\aegisub\audio_player.h" />
+    <ClInclude Include="..\..\..\src\include\aegisub\context.h" />
+    <ClInclude Include="..\..\..\src\include\aegisub\hotkey.h" />
+    <ClInclude Include="..\..\..\src\include\aegisub\menu.h" />
+    <ClInclude Include="..\..\..\src\include\aegisub\spellchecker.h" />
+    <ClInclude Include="..\..\..\src\include\aegisub\subtitles_provider.h" />
+    <ClInclude Include="..\..\..\src\include\aegisub\toolbar.h" />
+    <ClInclude Include="..\..\..\src\include\aegisub\video_provider.h" />
+    <ClInclude Include="..\..\..\src\initial_line_state.h" />
+    <ClInclude Include="..\..\..\src\libresrc\libresrc.h" />
+    <ClInclude Include="..\..\..\src\main.h" />
+    <ClInclude Include="..\..\..\src\MatroskaParser.h" />
+    <ClInclude Include="..\..\..\src\mkv_wrap.h" />
+    <ClInclude Include="..\..\..\src\options.h" />
+    <ClInclude Include="..\..\..\src\pen.h" />
+    <ClInclude Include="..\..\..\src\persist_location.h" />
+    <ClInclude Include="..\..\..\src\placeholder_ctrl.h" />
+    <ClInclude Include="..\..\..\src\preferences.h" />
+    <ClInclude Include="..\..\..\src\preferences_base.h" />
+    <ClInclude Include="..\..\..\src\project.h" />
+    <ClInclude Include="..\..\..\src\resolution_resampler.h" />
+    <ClInclude Include="..\..\..\src\retina_helper.h" />
+    <ClInclude Include="..\..\..\src\search_replace_engine.h" />
+    <ClInclude Include="..\..\..\src\selection_controller.h" />
+    <ClInclude Include="..\..\..\src\spellchecker_hunspell.h" />
+    <ClInclude Include="..\..\..\src\spline.h" />
+    <ClInclude Include="..\..\..\src\spline_curve.h" />
+    <ClInclude Include="..\..\..\src\string_codec.h" />
+    <ClInclude Include="..\..\..\src\subs_controller.h" />
+    <ClInclude Include="..\..\..\src\subs_edit_box.h" />
+    <ClInclude Include="..\..\..\src\subs_edit_ctrl.h" />
+    <ClInclude Include="..\..\..\src\subs_preview.h" />
+    <ClInclude Include="..\..\..\src\subtitles_provider_csri.h" />
+    <ClInclude Include="..\..\..\src\subtitles_provider_libass.h" />
+    <ClInclude Include="..\..\..\src\subtitle_format.h" />
+    <ClInclude Include="..\..\..\src\subtitle_format_ass.h" />
+    <ClInclude Include="..\..\..\src\subtitle_format_ebu3264.h" />
+    <ClInclude Include="..\..\..\src\subtitle_format_encore.h" />
+    <ClInclude Include="..\..\..\src\subtitle_format_microdvd.h" />
+    <ClInclude Include="..\..\..\src\subtitle_format_mkv.h" />
+    <ClInclude Include="..\..\..\src\subtitle_format_srt.h" />
+    <ClInclude Include="..\..\..\src\subtitle_format_ssa.h" />
+    <ClInclude Include="..\..\..\src\subtitle_format_transtation.h" />
+    <ClInclude Include="..\..\..\src\subtitle_format_ttxt.h" />
+    <ClInclude Include="..\..\..\src\subtitle_format_txt.h" />
+    <ClInclude Include="..\..\..\src\text_file_reader.h" />
+    <ClInclude Include="..\..\..\src\text_file_writer.h" />
+    <ClInclude Include="..\..\..\src\text_selection_controller.h" />
+    <ClInclude Include="..\..\..\src\thesaurus.h" />
+    <ClInclude Include="..\..\..\src\timeedit_ctrl.h" />
+    <ClInclude Include="..\..\..\src\time_range.h" />
+    <ClInclude Include="..\..\..\src\toggle_bitmap.h" />
+    <ClInclude Include="..\..\..\src\tooltip_manager.h" />
+    <ClInclude Include="..\..\..\src\utils.h" />
+    <ClInclude Include="..\..\..\src\validators.h" />
+    <ClInclude Include="..\..\..\src\value_event.h" />
+    <ClInclude Include="..\..\..\src\vector2d.h" />
+    <ClInclude Include="..\..\..\src\version.h" />
+    <ClInclude Include="..\..\..\src\video_box.h" />
+    <ClInclude Include="..\..\..\src\video_controller.h" />
+    <ClInclude Include="..\..\..\src\video_display.h" />
+    <ClInclude Include="..\..\..\src\video_frame.h" />
+    <ClInclude Include="..\..\..\src\video_out_gl.h" />
+    <ClInclude Include="..\..\..\src\video_provider_dummy.h" />
+    <ClInclude Include="..\..\..\src\video_provider_manager.h" />
+    <ClInclude Include="..\..\..\src\video_slider.h" />
+    <ClInclude Include="..\..\..\src\visual_feature.h" />
+    <ClInclude Include="..\..\..\src\visual_tool.h" />
+    <ClInclude Include="..\..\..\src\visual_tool_clip.h" />
+    <ClInclude Include="..\..\..\src\visual_tool_cross.h" />
+    <ClInclude Include="..\..\..\src\visual_tool_drag.h" />
+    <ClInclude Include="..\..\..\src\visual_tool_rotatexy.h" />
+    <ClInclude Include="..\..\..\src\visual_tool_rotatez.h" />
+    <ClInclude Include="..\..\..\src\visual_tool_scale.h" />
+    <ClInclude Include="..\..\..\src\visual_tool_vector_clip.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
