@@ -55,6 +55,7 @@
 #include <wx/spinctrl.h>
 #include <wx/stattext.h>
 #include <wx/treebook.h>
+#include <wx/dc.h>
 
 namespace {
 /// General preferences page

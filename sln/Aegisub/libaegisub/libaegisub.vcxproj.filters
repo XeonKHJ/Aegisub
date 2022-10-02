@@ -82,6 +82,12 @@
     <Filter Include="头文件\lua\modules">
       <UniqueIdentifier>{3a48f496-5326-4121-9785-a7a364005d52}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\libresrc">
+      <UniqueIdentifier>{4872a2c1-f7e3-43f3-bc97-3917359c4d71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\libresrc">
+      <UniqueIdentifier>{ed9a1fbf-fab0-4736-9cde-d4fd5516caab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\libaegisub\ass\dialogue_parser.cpp">
@@ -245,6 +251,15 @@
     </ClCompile>
     <ClCompile Include="..\..\..\libaegisub\windows\util_win.cpp">
       <Filter>源文件\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libresrc\bitmap.cpp">
+      <Filter>源文件\libresrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libresrc\default_config.cpp">
+      <Filter>源文件\libresrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libresrc\libresrc.cpp">
+      <Filter>源文件\libresrc</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -424,6 +439,15 @@
     </ClInclude>
     <ClInclude Include="..\..\..\libaegisub\lua\modules\lpeg.h">
       <Filter>头文件\lua\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libresrc\bitmap.h">
+      <Filter>头文件\libresrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libresrc\default_config.h">
+      <Filter>头文件\libresrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\libresrc\libresrc.h">
+      <Filter>头文件\libresrc</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

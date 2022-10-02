@@ -27,6 +27,7 @@
 #include <OpenGL/gl.h>
 #include <OpenGL/glext.h>
 #else
+#include <Windows.h>
 #include <GL/gl.h>
 #include "gl/glext.h"
 #endif

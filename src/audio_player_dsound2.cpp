@@ -45,6 +45,7 @@
 #include <libaegisub/log.h>
 #include <libaegisub/make_unique.h>
 
+#include <Windows.h>
 #include <mmsystem.h>
 #include <process.h>
 #include <dsound.h>

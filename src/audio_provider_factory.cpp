@@ -27,6 +27,8 @@
 
 #include <boost/range/iterator_range.hpp>
 
+#include <vector>
+
 using namespace agi;
 
 std::unique_ptr<AudioProvider> CreateAvisynthAudioProvider(fs::path const& filename, BackgroundRunner *);

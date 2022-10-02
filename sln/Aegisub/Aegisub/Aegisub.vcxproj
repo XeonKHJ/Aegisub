@@ -102,7 +102,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;WITH_DIRECTSOUND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\include;$(SolutionDir)..\..\libaegisub\include;$(MSBuildProjectDirectory)\..\..\..\vendor\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -378,6 +378,7 @@
     <ClInclude Include="..\..\..\src\font_file_lister.h" />
     <ClInclude Include="..\..\..\src\format.h" />
     <ClInclude Include="..\..\..\src\frame_main.h" />
+    <ClInclude Include="..\..\..\src\git_version.h" />
     <ClInclude Include="..\..\..\src\gl\glext.h" />
     <ClInclude Include="..\..\..\src\gl_text.h" />
     <ClInclude Include="..\..\..\src\gl_wrap.h" />

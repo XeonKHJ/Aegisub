@@ -36,6 +36,8 @@
 
 #include <wx/bitmap.h>
 #include <wx/string.h>
+#include <wx/menu.h>
+#include <wx/frame.h>
 
 class wxKeyEvent;
 class wxMouseEvent;

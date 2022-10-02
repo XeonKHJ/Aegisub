@@ -189,6 +189,7 @@ ProjectProperties SubsController::Load(agi::fs::path const& filename, std::strin
 			path = filename.parent_path();
 		else
 			path = context->path->Decode(path_str);
+#undef CreateDirectory
 		agi::fs::CreateDirectory(path);
 		agi::fs::Copy(filename, path/(filename.stem().string() + ".ORIGINAL" + filename.extension().string()));
 	}
@@ -272,6 +273,7 @@ void SubsController::AutoSave() {
 		std::unique_ptr<AssFile> subs(subs_copy);
 
 		try {
+#undef CreateDirectory
 			agi::fs::CreateDirectory(directory);
 			auto path = directory /  agi::format("%s.%s.AUTOSAVE.ass", name.string(),
 			                                     agi::util::strftime("%Y-%m-%d-%H-%M-%S"));

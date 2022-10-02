@@ -470,7 +470,8 @@ namespace {
 		stackcheck.check_stack(0);
 
 		// make "aegisub" table
-		lua_pushstring(L, "aegisub");
+		std::string luna_global_name = "aegisub";
+		lua_pushstring(L, luna_global_name.c_str());
 		lua_createtable(L, 0, 13);
 
 		set_field<LuaCommand::LuaRegister>(L, "register_macro");
@@ -491,7 +492,8 @@ namespace {
 		set_field<lua_set_status_text>(L, "set_status_text");
 
 		// store aegisub table to globals
-		lua_settable(L, LUA_GLOBALSINDEX);
+		lua_setglobal(L, luna_global_name.c_str());
+		
 		stackcheck.check_stack(0);
 
 		// load user script

@@ -49,6 +49,7 @@
 #ifdef HAVE_OPENGL_GL_H
 #include <OpenGL/gl.h>
 #else
+#include <Windows.h>
 #include <GL/gl.h>
 #endif
 
@@ -138,6 +139,7 @@ class OpenGLTextTexture final : boost::noncopyable {
 		dc.Clear();
 		dc.SetFont(glyph.font);
 		dc.SetTextForeground(*wxWHITE);
+#undef DrawText
 		dc.DrawText(glyph.str, 0, 0);
 
 		// Convert RGB24 to Luminance + Alpha by using an arbitrary channel as A
@@ -157,10 +159,10 @@ class OpenGLTextTexture final : boost::noncopyable {
 
 public:
 	OpenGLTextTexture(OpenGLTextGlyph &glyph)
-	: width(std::max(SmallestPowerOf2(glyph.w), 64))
-	, height(std::max(SmallestPowerOf2(glyph.h), 64))
+	: width((std::max)(SmallestPowerOf2(glyph.w), 64))
+	, height((std::max)(SmallestPowerOf2(glyph.h), 64))
 	{
-		width = height = std::max(width, height);
+		width = height = (std::max)(width, height);
 
 		// Generate and bind
 		glGenTextures(1, &tex);
@@ -205,7 +207,7 @@ public:
 		if (x + glyph.w < width) {
 			Insert(glyph);
 			x += glyph.w;
-			nextY = std::max(nextY, y + glyph.h);
+			nextY = (std::max)(nextY, y + glyph.h);
 			return true;
 		}
 
@@ -282,7 +284,7 @@ void OpenGLText::GetExtent(std::string const& text, int &w, int &h) {
 	for (char curChar : text) {
 		OpenGLTextGlyph const& glyph = GetGlyph(curChar);
 		w += glyph.w;
-		h = std::max(h, glyph.h);
+		h = (std::max)(h, glyph.h);
 	}
 }
 

@@ -27,6 +27,7 @@
 #include <boost/scope_exit.hpp>
 #include <unicode/utf16.h>
 #include <Usp10.h>
+#include <wx/translation.h>
 
 namespace {
 uint32_t murmur3(const char *data, uint32_t len) {
@@ -109,6 +110,7 @@ font_index index_fonts(FontCollectorStatusCallback &cb) {
 			hash_to_path.emplace(hash, path);
 		}
 		catch (agi::Exception const& e) {
+#undef GetMessage
 			cb(to_wx(e.GetMessage() + "\n"), 3);
 		}
 	}

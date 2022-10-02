@@ -92,9 +92,12 @@ SubsTextEditCtrl::SubsTextEditCtrl(wxWindow* parent, wxSize wsize, long style, a
 	// Set properties
 	SetWrapMode(wxSTC_WRAP_WORD);
 	SetMarginWidth(1,0);
+#pragma warning(disable:4996)
 	UsePopUp(false);
+#pragma warning(default:4996)
 	SetStyles();
 
+#pragma warning(disable:4995)
 	// Set hotkeys
 	CmdKeyClear(wxSTC_KEY_RETURN,wxSTC_SCMOD_CTRL);
 	CmdKeyClear(wxSTC_KEY_RETURN,wxSTC_SCMOD_SHIFT);
@@ -107,6 +110,7 @@ SubsTextEditCtrl::SubsTextEditCtrl(wxWindow* parent, wxSize wsize, long style, a
 	CmdKeyClear('T',wxSTC_SCMOD_CTRL);
 	CmdKeyClear('T',wxSTC_SCMOD_CTRL | wxSTC_SCMOD_SHIFT);
 	CmdKeyClear('U',wxSTC_SCMOD_CTRL);
+#pragma warning(default:4995)
 
 	using std::bind;
 
@@ -265,7 +269,9 @@ void SubsTextEditCtrl::UpdateStyle() {
 	cursor_pos = -1;
 	UpdateCallTip();
 
+#pragma warning(disable:4996)
 	StartStyling(0,255);
+#pragma warning(default:4996)
 
 	if (!OPT_GET("Subtitle/Highlight/Syntax")->GetBool()) {
 		SetStyling(line_text.size(), 0);

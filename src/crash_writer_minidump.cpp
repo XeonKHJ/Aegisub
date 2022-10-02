@@ -29,8 +29,8 @@
 #include <mutex>
 #include <thread>
 
-#include <DbgHelp.h>
 #include <Windows.h>
+#include <DbgHelp.h>
 
 extern EXCEPTION_POINTERS *wxGlobalSEInformation;
 
@@ -106,6 +106,8 @@ void Initialize(agi::fs::path const& path) {
 	crashlog_path = path / "crashlog.txt";
 
 	auto dump_path = path / "crashdumps";
+
+#undef CreateDirectory
 	agi::fs::CreateDirectory(dump_path);
 
 	const auto path_str = (dump_path / GetVersionNumber()).wstring();

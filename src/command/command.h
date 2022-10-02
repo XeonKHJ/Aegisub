@@ -19,6 +19,7 @@
 #include <map>
 #include <string>
 #include <vector>
+#include <memory>
 
 #include <wx/bitmap.h>
 #include <wx/intl.h>

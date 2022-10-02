@@ -73,6 +73,9 @@
     <ClCompile Include="..\..\..\libaegisub\windows\log_win.cpp" />
     <ClCompile Include="..\..\..\libaegisub\windows\path_win.cpp" />
     <ClCompile Include="..\..\..\libaegisub\windows\util_win.cpp" />
+    <ClCompile Include="..\..\..\src\libresrc\bitmap.cpp" />
+    <ClCompile Include="..\..\..\src\libresrc\default_config.cpp" />
+    <ClCompile Include="..\..\..\src\libresrc\libresrc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\libaegisub\common\charset_6937.h" />
@@ -134,6 +137,9 @@
     <ClInclude Include="..\..\..\libaegisub\include\libaegisub\vfr.h" />
     <ClInclude Include="..\..\..\libaegisub\include\libaegisub\ycbcr_conv.h" />
     <ClInclude Include="..\..\..\libaegisub\lua\modules\lpeg.h" />
+    <ClInclude Include="..\..\..\src\libresrc\bitmap.h" />
+    <ClInclude Include="..\..\..\src\libresrc\default_config.h" />
+    <ClInclude Include="..\..\..\src\libresrc\libresrc.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\libaegisub\include\libaegisub\charsets.def" />

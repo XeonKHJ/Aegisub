@@ -16,10 +16,11 @@
 
 #include "video_frame.h"
 
+#include <boost/version.hpp>
 #if BOOST_VERSION >= 106900
 #include <boost/gil.hpp>
 #else
-#include <boost/gil.hpp>
+#include <boost/gil/gil_all.hpp>
 #endif
 #include <wx/image.h>
 

@@ -28,6 +28,8 @@
 #ifdef HAVE_OPENGL_GL_H
 #include <OpenGL/gl.h>
 #else
+// To prevent erros in gl.h, we need to include Windows.h here.
+#include <Windows.h>
 #include <GL/gl.h>
 #endif
 
@@ -188,8 +190,8 @@ void VideoOutGL::InitTextures(int width, int height, GLenum format, int bpp, boo
 			// Width and height of the area read from the frame data
 			int sourceX = col * textureArea;
 			int sourceY = row * textureArea;
-			ti.sourceW  = std::min(frameWidth  - sourceX, maxTextureSize);
-			ti.sourceH  = std::min(frameHeight - sourceY, maxTextureSize);
+			ti.sourceW  = (std::min)(frameWidth  - sourceX, maxTextureSize);
+			ti.sourceH  = (std::min)(frameHeight - sourceY, maxTextureSize);
 
 			// Used instead of GL_PACK_SKIP_ROWS/GL_PACK_SKIP_PIXELS due to
 			// performance issues with the emulation
@@ -198,7 +200,7 @@ void VideoOutGL::InitTextures(int width, int height, GLenum format, int bpp, boo
 			int textureHeight = SmallestPowerOf2(ti.sourceH);
 			int textureWidth  = SmallestPowerOf2(ti.sourceW);
 			if (!supportsRectangularTextures) {
-				textureWidth = textureHeight = std::max(textureWidth, textureHeight);
+				textureWidth = textureHeight = (std::max)(textureWidth, textureHeight);
 			}
 
 			// Location where this texture is placed

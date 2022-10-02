@@ -1038,5 +1038,8 @@
     <ClInclude Include="..\..\..\src\libresrc\libresrc.h">
       <Filter>头文件\libresrc</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\src\git_version.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

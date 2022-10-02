@@ -18,6 +18,8 @@
 
 #include "dialogs.h"
 
+#include <boost/version.hpp>
+
 #if BOOST_VERSION >= 106900
 #include <boost/gil.hpp>
 #else
