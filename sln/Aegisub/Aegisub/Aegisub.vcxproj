@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\include;$(SolutionDir)..\..\libaegisub\include;$(MSBuildProjectDirectory)\..\..\..\vendor\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -458,6 +459,11 @@
     <ClInclude Include="..\..\..\src\visual_tool_rotatez.h" />
     <ClInclude Include="..\..\..\src\visual_tool_scale.h" />
     <ClInclude Include="..\..\..\src\visual_tool_vector_clip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libaegisub\libaegisub.vcxproj">
+      <Project>{388dc7de-c952-4d9f-9f75-35b27577716e}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
