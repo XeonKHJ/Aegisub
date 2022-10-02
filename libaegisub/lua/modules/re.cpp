@@ -102,7 +102,7 @@ u32regex *regex_compile(const char *pattern, int flags, char **err) {
 		return re.release();
 	}
 	catch (std::exception const& e) {
-		*err = strdup(e.what());
+		*err = _strdup(e.what());
 		return nullptr;
 	}
 }

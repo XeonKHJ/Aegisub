@@ -35,13 +35,13 @@ auto wrap(char **err, Func f) -> decltype(f()) {
 		return f();
 	}
 	catch (std::exception const& e) {
-		*err = strdup(e.what());
+		*err = _strdup(e.what());
 	}
 	catch (agi::Exception const& e) {
 		*err = strndup(e.GetMessage());
 	}
 	catch (...) {
-		*err = strdup("Unknown error");
+		*err = _strdup("Unknown error");
 	}
 	return 0;
 }

@@ -58,7 +58,7 @@ char *map(int64_t s_offset, uint64_t length, boost::interprocess::mode_t mode,
 		length = file_size;
 	}
 
-	if (length > std::numeric_limits<size_t>::max())
+	if (length > (std::numeric_limits<size_t>::max)())
 		throw std::bad_alloc();
 
 	try {

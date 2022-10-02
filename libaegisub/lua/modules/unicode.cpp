@@ -24,7 +24,7 @@ char *wrap(const char *str, char **err) {
 	try {
 		return agi::lua::strndup(func(str, std::locale()));
 	} catch (std::exception const& e) {
-		*err = strdup(e.what());
+		*err = _strdup(e.what());
 		return nullptr;
 	}
 }
