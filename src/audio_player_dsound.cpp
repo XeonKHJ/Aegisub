@@ -43,6 +43,7 @@
 #include <libaegisub/log.h>
 #include <libaegisub/make_unique.h>
 
+#include <Windows.h>
 #include <mmsystem.h>
 #include <dsound.h>
 
@@ -121,7 +122,7 @@ DirectSoundPlayer::DirectSoundPlayer(agi::AudioProvider *provider, wxWindow *par
 	int aim = waveFormat.nAvgBytesPerSec * 15/100; // 150 ms buffer
 	int min = DSBSIZE_MIN;
 	int max = DSBSIZE_MAX;
-	bufSize = std::min(std::max(min,aim),max);
+	bufSize = (std::min)((std::max)(min,aim),max);
 	DSBUFFERDESC desc;
 	desc.dwSize = sizeof(DSBUFFERDESC);
 	desc.dwFlags = DSBCAPS_GETCURRENTPOSITION2 | DSBCAPS_GLOBALFOCUS;

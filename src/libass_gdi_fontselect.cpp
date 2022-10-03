@@ -15,7 +15,7 @@
 // Aegisub Project http://www.aegisub.org/
 
 extern "C" {
-#include "ass_fontselect.h"
+#include "../vendor/libass/libass/ass_fontselect.h"
 }
 
 #undef inline
@@ -60,7 +60,7 @@ size_t GdiFont::GetData(unsigned char *data, size_t offset, size_t len) {
 	return len;
 }
 
-void match_fonts(ASS_Library *lib, ASS_FontProvider *provider, char *name) {
+void match_fonts(void* priv, ASS_Library *lib, ASS_FontProvider *provider, char *name) {
 	std::shared_ptr<HDC__> dc(CreateCompatibleDC(nullptr), [](HDC dc) { DeleteDC(dc); });
 
 	LOGFONTW lf{};

@@ -12,8 +12,9 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "lua.h"
-#include "lauxlib.h"
+#include <luaconf.h>
+#include <lua.h>
+#include <lauxlib.h>
 
 #include "lpeg.h"
 
@@ -26,7 +27,7 @@
 /*
 ** compatibility with Lua 5.2
 */
-#if (LUA_VERSION_NUM == 502)
+#if (LUA_VERSION_NUM >= 502)
 
 #undef lua_equal
 #define lua_equal(L,idx1,idx2)  lua_compare(L,(idx1),(idx2),LUA_OPEQ)
@@ -1417,7 +1418,7 @@ static int pattbehind (lua_State *L) {
   int l1;
   CharsetTag st1;
   Instruction *p1 = getpatt(L, 1, &l1);
-  int n = luaL_optint(L, 2, 1);
+  int n = luaL_optinteger(L, 2, 1);
   luaL_argcheck(L, n <= MAXAUX, 2, "lookbehind delta too large");
   if (!nocalls(p1))
     luaL_error(L, "lookbehind pattern cannot contain non terminals");
@@ -1644,7 +1645,7 @@ static void optionals (lua_State *L, int l1, int n) {
 
 static int star_l (lua_State *L) {
   int l1;
-  int n = luaL_checkint(L, 2);
+  int n = luaL_checkinteger(L, 2);
   Instruction *p1 = getpatt(L, 1, &l1);
   if (n >= 0) {
     CharsetTag st;
@@ -1743,7 +1744,7 @@ static int backref_l (lua_State *L) {
 
 
 static int argcap_l (lua_State *L) {
-  int n = luaL_checkint(L, 1);
+  int n = luaL_checkinteger(L, 1);
   Instruction *p = newpatt(L, 1);
   luaL_argcheck(L, 0 < n && n <= SHRT_MAX, 1, "invalid argument index");
   setinstcap(p, IEmptyCapture, n, Carg, 0);
