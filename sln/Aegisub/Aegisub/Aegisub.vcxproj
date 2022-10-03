@@ -198,7 +198,6 @@
     <ClCompile Include="..\..\..\src\command\vis_tool.cpp" />
     <ClCompile Include="..\..\..\src\compat.cpp" />
     <ClCompile Include="..\..\..\src\context.cpp" />
-    <ClCompile Include="..\..\..\src\crash_writer.cpp" />
     <ClCompile Include="..\..\..\src\crash_writer_minidump.cpp" />
     <ClCompile Include="..\..\..\src\dialog_about.cpp" />
     <ClCompile Include="..\..\..\src\dialog_attachments.cpp" />
