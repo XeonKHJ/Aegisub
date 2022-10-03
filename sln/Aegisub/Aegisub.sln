@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aegisub", "Aegisub\Aegisub.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libaegisub", "libaegisub\libaegisub.vcxproj", "{388DC7DE-C952-4D9F-9F75-35B27577716E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "luabins", "luabins\luabins.vcxproj", "{488705F5-481F-4B8F-9575-DC7081CB6131}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{388DC7DE-C952-4D9F-9F75-35B27577716E}.Release|x64.Build.0 = Release|x64
 		{388DC7DE-C952-4D9F-9F75-35B27577716E}.Release|x86.ActiveCfg = Release|Win32
 		{388DC7DE-C952-4D9F-9F75-35B27577716E}.Release|x86.Build.0 = Release|Win32
+		{488705F5-481F-4B8F-9575-DC7081CB6131}.Debug|x64.ActiveCfg = Debug|x64
+		{488705F5-481F-4B8F-9575-DC7081CB6131}.Debug|x64.Build.0 = Debug|x64
+		{488705F5-481F-4B8F-9575-DC7081CB6131}.Debug|x86.ActiveCfg = Debug|Win32
+		{488705F5-481F-4B8F-9575-DC7081CB6131}.Debug|x86.Build.0 = Debug|Win32
+		{488705F5-481F-4B8F-9575-DC7081CB6131}.Release|x64.ActiveCfg = Release|x64
+		{488705F5-481F-4B8F-9575-DC7081CB6131}.Release|x64.Build.0 = Release|x64
+		{488705F5-481F-4B8F-9575-DC7081CB6131}.Release|x86.ActiveCfg = Release|Win32
+		{488705F5-481F-4B8F-9575-DC7081CB6131}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
