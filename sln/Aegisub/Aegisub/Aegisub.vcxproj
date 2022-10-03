@@ -236,7 +236,6 @@
     <ClCompile Include="..\..\..\src\ffmpegsource_common.cpp" />
     <ClCompile Include="..\..\..\src\fft.cpp" />
     <ClCompile Include="..\..\..\src\font_file_lister.cpp" />
-    <ClCompile Include="..\..\..\src\font_file_lister_fontconfig.cpp" />
     <ClCompile Include="..\..\..\src\font_file_lister_gdi.cpp" />
     <ClCompile Include="..\..\..\src\frame_main.cpp" />
     <ClCompile Include="..\..\..\src\gl_text.cpp" />

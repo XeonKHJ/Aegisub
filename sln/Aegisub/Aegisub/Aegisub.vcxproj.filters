@@ -328,12 +328,6 @@
     <ClCompile Include="..\..\..\src\fft.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\font_file_lister.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\font_file_lister_fontconfig.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\src\font_file_lister_gdi.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -612,6 +606,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\libresrc\libresrc.cpp">
       <Filter>源文件\libresrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\font_file_lister.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
