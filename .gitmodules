@@ -39,3 +39,6 @@
 [submodule "vendor/vcpkg"]
 	path = vendor/vcpkg
 	url = https://github.com/Microsoft/vcpkg.git
+[submodule "libass"]
+	path = vendor/libass
+	url = https://github.com/libass/libass.git
